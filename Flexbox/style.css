@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.menu-container {
+    display: flex;
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    justify-content:center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+}
+
+.links {
+    border: 0px solid #fff; /* For debugging */
+    display: flex;
+    justify-content: space-around;
+    /*width: 150px;*/
+}
+
+.login {
+    margin: 0px 20px; /*That way you can control exactly
+    the distance to the border of the container*/
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+    /*border: 1px solid red; Debuggin purpose*/
+}
+  
+.header {
+    /*border: 1px solid rgb(202, 17, 226); Debuggin purpose*/
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social, .logo, .subscribe {
+    /*border: 1px solid #5995DA /*For debugging*/
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    /*border: 1px solid red; /* For debugging */
+    display: flex;
+    justify-content: center; /*Refers to the center of the principal direction*/
+    align-items: center; /*Refers to the center of the perpendicular direction to the principal*/
+    width: 910px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.photo-grid-item {
+    border:1px solid #fff; /*Design Purposses*/
+    width: 300px;
+    height: 300px;
+}
+
+.last-item {
+    order: 0;
+}
+
+.first-item {
+    order: -1;
+}
+
+.social, .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+
+
+.footer-one, .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+}
+
+.signup {
+    margin-left: auto; /*Eats up all the extra space in a flex container*/
+}
